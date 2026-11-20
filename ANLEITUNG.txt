@@ -1,0 +1,20 @@
+Activity Inspector - Meteor Client Addon (Minecraft 1.21.11, Fabric)
+
+BAUEN (am einfachsten):
+1. JDK 21 installieren.
+2. Offizielles Template holen: https://github.com/MeteorDevelopment/meteor-addon-template
+   (Branch/Version für 1.21.11 wählen).
+3. Im Template den Ordner src/ löschen und den src/-Ordner aus diesem ZIP hineinkopieren.
+   Den Gradle-Wrapper (gradlew, gradle/) und die Versionsnummern aus dem Template behalten.
+4. Im Ordner ausführen:  gradlew build   (Linux/Mac: ./gradlew build)
+5. build/libs/activity-inspector-addon-1.0.0.jar in .minecraft/mods legen
+   (zusammen mit Meteor Client und Fabric API für 1.21.11).
+
+BENUTZEN:
+- Meteor-GUI (Rechte Shift) -> Kategorie "Debug" -> "activity-inspector" einschalten
+- Einstellungen: interval-ticks, history-minutes, ignore-self, render-trails, color
+- Chat-Befehle:
+    .activity                    -> Liste der getrackten Spieler
+    .activity <Spieler> [Min]    -> letzte Positionen mit Uhrzeit
+
+Hinweis: Ein Client sieht nur Spieler in Sichtweite, außerhalb davon gibt es keine Daten.

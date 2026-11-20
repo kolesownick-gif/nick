@@ -1,0 +1,14 @@
+FERTIGE .JAR OHNE ETWAS ZU INSTALLIEREN (über GitHub, kostenlos)
+
+1. Auf github.com einloggen -> "New repository" -> Name egal -> Create.
+2. "uploading an existing file" klicken und den INHALT dieses Ordners
+   hochziehen (auch den Ordner .github!) -> Commit.
+   Tipp: .github ist versteckt. Unter Windows: Explorer -> Ansicht -> Ausgeblendete Elemente.
+3. Oben auf "Actions" klicken -> "Build Addon" läuft automatisch (ca. 3-5 Min).
+4. Wenn grüner Haken: Lauf anklicken -> unten bei "Artifacts"
+   "activity-inspector-addon" herunterladen und entpacken.
+5. Die .jar (NICHT die mit "-sources") in .minecraft/mods legen, neben Meteor.
+6. Minecraft starten -> Rechte Shift -> Kategorie "Debug" -> activity-inspector.
+
+Roter Fehler? Die Versionen in gradle.properties an die aus dem
+meteor-addon-template (1.21.11) anpassen und erneut hochladen.

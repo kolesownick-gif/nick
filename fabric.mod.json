@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "activity-inspector-addon",
+  "version": "${version}",
+  "name": "Activity Inspector",
+  "description": "Debug-Addon für Meteor Client: zeigt, wo sich Spieler zuletzt bewegt haben.",
+  "authors": ["privat"],
+  "environment": "client",
+  "entrypoints": {
+    "meteor": ["de.privat.activityaddon.ActivityAddon"]
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": "~1.21.11",
+    "meteor-client": "*"
+  }
+}
